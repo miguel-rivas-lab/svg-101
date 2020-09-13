@@ -1,0 +1,47 @@
+aside {
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.face {
+  border: 20px solid #FFFFFF;
+  top: 50%;
+  left: 50%;
+  margin-left: -139px;
+  margin-top: -139px;
+  width: 238px;
+  height: 238px;
+  position: absolute;
+  background: #333 url(../img/mapa.png) repeat-x;
+  border-radius: 30%;
+  -webkit-animation: rotY 5000ms linear infinite;
+          animation: rotY 5000ms linear infinite;
+}
+
+@-webkit-keyframes rotY
+{
+  0%
+{
+    background-position: 0 0;
+  }
+  100%
+{
+    background-position: 544px 0;
+  }
+}
+
+@keyframes rotY
+{
+  0%
+{
+    background-position: 0 0;
+  }
+  100%
+{
+    background-position: 544px 0;
+  }
+}

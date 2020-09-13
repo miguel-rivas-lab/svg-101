@@ -1,0 +1,49 @@
+- var pageTitle = "SVG 101"
+- var site = "Miguel Rivas"
+- var fbPreview = "http://miguelrivas.me/img/pv_svg_101.png"
+- var icoPath = "http://miguelrivas.me/img/logo.png"
+- var icoBackground = "#222"
+- var description = "SVG 101 Experiments"
+- var keyWords = "aguacate, aguacatekun, santo, domingo, republica, dominicana, svg"
+- var viewPort = false
+
+doctype html
+html
+	head
+		include jade/metatags
+		link(href="css/main.css", rel="stylesheet")
+		script.
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-89989670-1', 'auto');
+			ga('send', 'pageview');
+	body
+		aside
+			.face
+		main
+			a#logo(href="../../"): img(src="img/logo2.png", alt="aguacatekun")
+			span#texture
+			section(data-stellar-background-ratio="0.1")
+				include svg/penguin.svg
+				include svg/penguin.svg
+				include svg/penguin.svg
+				include svg/penguin.svg
+				include svg/penguin.svg
+				include svg/penguin.svg
+				include svg/mountain.svg
+				include svg/igloo.svg
+				include svg/moon.svg
+				include svg/bunny.svg
+				include svg/ship.svg
+				include svg/spaceship.svg
+				include svg/giraffe.svg
+
+		script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+		script(src="js/jquery-stellar.js")
+		script(src="js/jquery-mousewheel.js")
+		script(src="js/snap.svg-min.js")
+		script(src="js/avoRights.js")
+		script(src="js/world.js")
