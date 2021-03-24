@@ -1,0 +1,50 @@
+body, html
+{
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+}
+
+body, main, html
+{
+	height: 100%;
+	display: block;
+}
+
+section
+{
+	background-color: #1b5266;
+	background-image: url(../img/stars.png);
+	font-size: 0;
+	width: 4600px;
+	height: 100%;
+
+	&:after,
+	&:before
+	{
+		content: "";
+		position: fixed;
+		display: block;
+		width: 100%;
+		z-index: 3;
+	}
+
+	&:after
+	{
+		background-color: #289ee0;
+		bottom: 0;
+		height: 135px;
+	}
+	&:before
+	{
+		background-color: #57B8EF;
+		bottom: 135px;
+		height: 30px;
+	}
+}
+
+svg
+{
+	display: block;
+	position: absolute;
+}

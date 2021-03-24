@@ -1,0 +1,240 @@
+@import "world/preload";
+@import "world/settings";
+
+#texture
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/paper.jpg);
+	z-index: 9;
+	opacity: .15;
+	pointer-events: none;
+}
+
+#logo
+{
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    left: 0;
+}
+
+#moon, #mountain
+{
+	polygon
+	{
+		animation: dash 5s linear infinite;
+		stroke-width: 0;
+		stroke-dasharray: 20;
+		fill-opacity: 1;
+	}	
+}
+
+#moon
+{
+	top: 70px;
+	right: 310px;
+	z-index: 0;
+}
+
+@keyframes dash
+{
+	to
+	{
+		stroke-dashoffset: 1000;
+	}
+}
+
+#mountain
+{
+	bottom: 120px;
+	left: 320px;
+	z-index: 1;
+}
+
+.penguin
+{
+	bottom: 143px;
+	left: -56px;
+	z-index: 4;
+	position: fixed;
+	animation: ninja linear 20s infinite;
+
+	.sign
+	{
+		opacity: 0;
+		animation: exclamationSign linear 200ms alternate infinite;
+		transform: rotate(-14deg);
+		transform-origin: 50% 100%;
+	}
+
+	.foot
+	{
+		animation: footMv linear 200ms infinite;
+		&.left{ animation-delay: 100ms; }
+	}
+
+	svg
+	{
+		position: relative;
+		animation: jumper linear 200ms infinite;
+	}
+
+	&:nth-child(1){ animation-delay: 0ms;}
+	&:nth-child(2){ animation-delay: 500ms;}
+	&:nth-child(3){ animation-delay: 700ms;}
+	&:nth-child(4){ animation-delay: 900ms;}
+	&:nth-child(5){ animation-delay: 1100ms;}
+	&:nth-child(6){ animation-delay: 1300ms;}
+}
+
+@keyframes ninja
+{
+	0%
+	{
+		left: -56px;
+		transform: scaleX(1);
+	}
+	40%
+	{
+		left: 100%;
+		transform: scaleX(1);
+	}
+	50%
+	{
+		transform: scaleX(-1);
+		left: 100%;
+	}
+	90%
+	{
+		left: -56px;
+		transform: scaleX(-1);
+	}
+}
+
+@keyframes jumper
+{
+	to
+	{
+		bottom: 1px;
+	}
+}
+
+@keyframes footMv
+{
+	to
+	{
+		transform: translateY(5px);
+	}
+}
+
+@keyframes exclamationSign
+{
+	to
+	{
+		transform: rotate(16deg);
+	}
+}
+
+#igloo
+{
+	bottom: 120px;
+	left: 1440px;
+	z-index: 5;
+
+	.textBox
+	{
+		opacity: 0;
+	}
+}
+
+#bunny
+{
+	bottom: 90px;
+	left: 260px;
+	z-index: 6;
+}
+
+#ship
+{
+	bottom: 150px;
+	left: 2200px;
+	z-index: 1;
+	animation: floatingShip linear 800ms alternate infinite;
+}
+
+@keyframes floatingShip
+{
+	to
+	{
+		transform: translateY(8px);
+	}
+}
+
+#spaceShip
+{
+	bottom: 66px;
+	width: 240px;
+	left: 3800px;
+	z-index: 3;
+	.ship
+	{
+		opacity: 0;
+	}
+	.cow
+	{
+		animation: flyingCow linear 800ms alternate infinite;
+	}
+}
+
+@keyframes flyingCow
+{
+	to
+	{
+		transform: translateY(10px);
+	}
+}
+
+#giraffe
+{
+	bottom: 85px;
+	left: 3700px;
+	height: 820px;
+	width: 720px;
+	z-index: 2;
+	.signal
+	{
+		animation: signalFade linear 200ms alternate infinite;
+		opacity: 1;
+		transform-origin: 50% 0;
+	}
+	.text
+	{
+		opacity: 0;
+	}
+	.foot
+	{
+		animation: moveFoot 300ms alternate steps(2) infinite;
+		transform: translateX(-10px);
+	}
+}
+
+@keyframes signalFade
+{
+	to
+	{
+		opacity: .2;
+		transform: scaleX(.8);
+	}
+}
+
+@keyframes moveFoot
+{
+	to
+	{
+		transform: translateX(100px) scaleX(.7);
+	}
+}

@@ -1,0 +1,30 @@
+<div class="penguin">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="40.763px" height="85px" viewBox="0 0 40.763 82.956" enable-background="new 0 0 40.763 85" xml:space="preserve">
+<g class="sign">
+	<rect x="29.282" y="28.75" fill="#C1272D" width="3" height="3"/>
+	<polygon fill="#C1272D" points="32.282,26.75 29.282,26.75 27.282,2.75 34.282,2.75 	"/>
+</g>
+	<g class="left foot">
+		
+			<rect x="9.886" y="75.273" transform="matrix(0.9971 0.0761 -0.0761 0.9971 5.9601 -0.5914)" fill="#FFC112" width="1.717" height="5.367"/>
+		
+			<rect x="9.137" y="80.131" transform="matrix(0.9497 0.3132 -0.3132 0.9497 25.9285 0.3525)" fill="#FFC112" width="5.46" height="1.503"/>
+		<polygon fill="#FFFFFF" points="12.284,77.536 8.859,77.274 7.421,67.905 15.128,68.494 		"/>
+	</g>
+	<g class="right foot">
+			<rect x="16.449" y="75.778" transform="matrix(0.9971 0.0761 -0.0761 0.9971 6.0231 -1.0899)" fill="#FFC112" width="1.717" height="5.367"/>
+		
+			<rect x="15.7" y="80.636" transform="matrix(0.9497 0.3132 -0.3132 0.9497 26.4167 -1.6775)" fill="#FFC112" width="5.46" height="1.503"/>
+		<polygon fill="#FFFFFF" points="18.847,78.04 15.422,77.779 13.984,68.41 21.69,68.999 		"/>
+	</g>
+	<polygon points="21.805,75.849 20.136,76.78 7.49,72.918 5.996,69.455 21.797,40.979 24.042,39.976 35.145,45.623 35.78,48.047 	
+		"/>
+	<polygon points="35.513,45.77 23.268,42.989 25.669,37.34 29.878,34.8 35.803,37.261 	"/>
+	<polygon fill="#FFC112" points="35.163,38.923 40.763,41.963 34.321,42.193 	"/>
+	<polygon points="15.732,56.713 1.62,30.233 22.902,43.473 	"/>
+	<polygon points="7.542,72.657 0,69.091 10.625,67.953 	"/>
+	<polygon fill="#FFFFFF" points="19.281,77.893 6.937,73.47 22.915,42.628 33.892,48.134 	"/>
+	<polygon fill="#FFFFFF" points="30.297,39.994 29.626,38.781 30.407,37.635 31.858,37.703 32.528,38.916 31.748,40.062 	"/>
+</svg>
+</div>
